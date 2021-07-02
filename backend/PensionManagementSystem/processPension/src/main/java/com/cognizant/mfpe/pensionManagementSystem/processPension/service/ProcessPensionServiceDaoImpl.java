@@ -38,7 +38,7 @@ public class ProcessPensionServiceDaoImpl implements ProcessPensionServiceDao {
 		if (isSessionValid(token)) {
 			pensioner = pensionerDetailClient.getPensionerDetailByAadhaar(token, aadhaarNumber);
 			if (pensioner == null) {
-				logger.info("END");
+				logger.info("END  Adhar failed");
 				return false;
 			}
 
@@ -48,7 +48,7 @@ public class ProcessPensionServiceDaoImpl implements ProcessPensionServiceDao {
 				logger.info("END");
 				return true;
 			}
-			logger.info("END");
+			logger.info("END CHECK FAILURE");
 
 			return false;
 		}

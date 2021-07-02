@@ -13,10 +13,10 @@ import com.cognizant.mfpe.pensionManagementSystem.webportal.model.ProcessPension
 @FeignClient(name = "process-pension-service", url = "http://localhost:9090")
 public interface ProcessPensionClient {
 	@GetMapping("/PensionDetail")
-	public Pensioner getPensionDetail(@RequestHeader("Authorization") String token,
-			@RequestParam(value="name") String name,
-			@RequestParam(value="dob") String dob, @RequestParam(value="pan") String pan,
-			@RequestParam(value="aadhar") Long aadhaar, @RequestParam(value="type") String type);
+	public Pensioner getPensionDetail(@RequestHeader("Authorization") String token, 
+			@RequestParam(value="name") String name,@RequestParam(value="dob") String dob,
+			@RequestParam(value="pan") String pan, @RequestParam(value="aadhaar") Long aadhaar, 
+			@RequestParam(value="type") String type);
 
 	@PostMapping("/ProcessPension")
 	public int getProcessingCode(@RequestHeader("Authorization") String token,

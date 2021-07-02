@@ -18,7 +18,7 @@ public interface PensionerDetailClient {
 
 	@GetMapping("/PensionerDetailByAadhaar/{aadhaarNumber}")
 	public Pensioner getPensionerDetailByAadhaar(@RequestHeader("Authorization") String token,
-			@PathVariable long aadhaarNumber);
+			@PathVariable(value="aadhaarNumber") long aadhaarNumber);
 
 	@PostMapping("/UpdatePensioner")
 	public boolean updatePensioner(@RequestHeader("Authorization") String token,

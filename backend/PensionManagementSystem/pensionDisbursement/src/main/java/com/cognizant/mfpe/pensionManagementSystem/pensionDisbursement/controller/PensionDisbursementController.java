@@ -46,8 +46,7 @@ public class PensionDisbursementController {
 
 	@PostMapping("/getServiceCharge")
 	@ApiOperation(value="Provides the bank service charge")
-	public double getBankServiceCharge(@RequestHeader("Authorization") String token,
-			@RequestBody String bankName) {
+	public double getBankServiceCharge(@RequestHeader("Authorization") String token, @RequestBody String bankName) {
 		logger.info("START");
 
 		if (pensionDisbursementServiceDao.isSessionValid(token)) {

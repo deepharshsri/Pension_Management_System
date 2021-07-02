@@ -13,7 +13,7 @@
 	<artifactId>pensionDisbursement</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>pensionDisbursement</name>
-	<description>MFPE Pod 1 Pension Management System</description>
+	<description>MFPE Pod 2 Pension Management System</description>
 	<properties>
 		<java.version>1.8</java.version>
 		<spring-cloud.version>2020.0.1</spring-cloud.version>
@@ -56,6 +56,7 @@
 				<type>pom</type>
 				<scope>import</scope>
 			</dependency>
+			
 		</dependencies>
 	</dependencyManagement>
 

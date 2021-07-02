@@ -1,0 +1,18 @@
+<p>pensioner-detail works!</p>
+<form (ngSubmit)="onSubmit()" method="GET" name="pension" id="pension">
+    <label for="name">Name</label>
+    <input type="text" class="form-control" name="name" [(ngModel)]="pensionDetails.name" placeholder="username" required=""/>
+    <label for="panNumber">Pan</label>
+    <input type="text" class="form-control" name="panNumber" [(ngModel)]="pensionDetails.panNumber" placeholder="pan" required=""/>
+    <label for="adhar">Adhaar</label>
+    <input type="text" class="form-control" name="adhar" [(ngModel)]="pensionDetails.aadhaarNumber" placeholder="adhar" required=""/>
+    <label for="dateOfBirth">DAte</label>
+    <input type="text" class="form-control" name="dateOfBirth" [(ngModel)]="pensionDetails.dateOfBirth" placeholder="date" required=""/>
+    <label for="typeOfPension">Pension type</label>
+    <select name="typeOfPension" id="typeOfPension" [(ngModel)]="pensionDetails.typeOfPension">
+        <option value="Family pension">Family pension</option>
+        <option value="Self pension">Self pension</option>
+    </select>
+    <input type="submit" value="Submit"/>
+</form>
+{{pensionDetails | json}}

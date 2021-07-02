@@ -18,8 +18,8 @@ import com.cognizant.mfpe.pensionManagementSystem.authorization.model.UserData;
 import com.cognizant.mfpe.pensionManagementSystem.authorization.service.AdminDetailsService;
 import com.cognizant.mfpe.pensionManagementSystem.authorization.service.JwtUtil;
 
-@RestController
 @CrossOrigin(origins="http://localhost:4200")
+@RestController
 public class AuthController {
 	private static Logger logger = LoggerFactory.getLogger(AuthController.class);
 

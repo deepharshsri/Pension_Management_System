@@ -30,7 +30,7 @@ export class AuthorizationComponent implements OnInit {
           console.log(response.authToken);
           console.log(response.userid);
           this.loginService.loginUser(response.authToken,response.userid);
-          window.location.href="/dashboard";
+          window.location.href="/pensionDetails";
         },
         error =>{
           console.log("error");

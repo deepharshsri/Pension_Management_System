@@ -1,9 +1,9 @@
 nav {
-	background-color: black;
+	background-color: white;
 }
 
 #navheading {
-	color: #DFA362;
+	color: #28a745;
 	font-size: 2rem;
 	font-weight: bold;
 }
@@ -11,7 +11,7 @@ nav {
 .icon-size {
 	font-size: 2rem;
 	vertical-align: middle;
-	color: #DFA362;
+	color: #28a745;
 }
 
 .logout {
@@ -20,7 +20,7 @@ nav {
 }
 
 a:hover .logout {
-	color: #DFA362;
+	color:#28a745;
 }
 
 #navname {
@@ -28,12 +28,12 @@ a:hover .logout {
 }
 
 #hamburger {
-	color: #DFA362;
+	color:#28a745;
 }
 
 body {
 	background-image:
-		url("https://images.unsplash.com/photo-1561414927-6d86591d0c4f?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=966&q=80");
+		url("https://images.unsplash.com/photo-1579621970795-87facc2f976d?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8bW9uZXl8ZW58MHx8MHx8&ixlib=rb-1.2.1&w=1000&q=80");
 	height: 100%;
 	background-position: center;
 	background-repeat: no-repeat;

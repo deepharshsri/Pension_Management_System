@@ -5,6 +5,7 @@ import java.text.SimpleDateFormat;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -20,6 +21,7 @@ import com.cognizant.mfpe.pensionManagementSystem.processPension.restClients.Pen
 
 import io.swagger.annotations.ApiOperation;
 
+@CrossOrigin(origins="http://localhost:4200")
 @RestController
 public class ProcessPensionController {
 	private static Logger logger = LoggerFactory.getLogger(ProcessPensionController.class);

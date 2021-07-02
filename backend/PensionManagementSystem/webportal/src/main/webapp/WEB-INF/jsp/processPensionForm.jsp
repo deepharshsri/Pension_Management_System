@@ -33,7 +33,7 @@ response.setHeader("Pragma", "no-cache"); //HTTP 1.0 backward compatibility
 <body class="d-flex flex-column min-vh-100 text-warning">
 	<nav class="navbar navbar-expand-lg navbar-dark"> <i
 		class="material-icons icon-size mr-4">savings</i> <a id="navheading"
-		class="navbar-brand"> State Government Pension</a>
+		class="navbar-brand"> Pension Management Service</a>
 
 
 	<button class="navbar-toggler" type="button" data-toggle="collapse"

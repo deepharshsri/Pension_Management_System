@@ -1,11 +1,13 @@
-Pod 1 MFPE
+Pod 2 MFPE
 Pension Management System
 
 Developed by:
-Samyuktha S
-Princi Kumari
-Shreya J B
-Ashish Kumar Sah
+Himanshu Shivhare -authorization -9095
+Deepansh    -web portal -9096
+Saloni mehra    -pension disbursement -9091
+Sumit   -process pension -9090
+Kushagra    -pension details -9092
+
 --------------------------------------------------------------------------------------------------
 Web Portal Access point: http://localhost:9096/
 
@@ -33,11 +35,12 @@ Username : admin
 Password : admin
 
 Pensioner Detail Form:
-Name: Page Glasper
-DOB : 27-05-1970
-PAN Number : A123456789
-Aadhaar Number : 1234567891011120
-Pension Type : Family Pension
+Name: zahida
+DOB : 22-05-1962
+PAN Number : T123456793
+Aadhaar Number : 1234567891011321
+Pension Type : Self pension
+
 
 Process Pension Form:
 Aadhaar Number : 1234567891011120

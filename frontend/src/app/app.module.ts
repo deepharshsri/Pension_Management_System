@@ -15,12 +15,21 @@ import {HttpClientModule, HTTP_INTERCEPTORS} from '@angular/common/http';
 import { AuthGuard } from 'src/services/auth.guard';
 import { AuthorizationService } from 'src/services/authorization.service';
 import { AuthInterceptor } from 'src/services/auth.interceptor';
+import { ProcessPensionComponent } from './process-pension/process-pension.component';
+import { PensionerDetailComponent } from './pensioner-detail/pensioner-detail.component';
+import { PensionDisbursementService } from 'src/services/pension-disbursement.service';
+import { ProcessPensionService } from 'src/services/process-pension.service';
+import { PensionerDetailService } from 'src/services/pensioner-detail.service';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     AuthorizationComponent,
-    DdashboardComponent
+    DdashboardComponent,
+    ProcessPensionComponent,
+    PensionerDetailComponent,
+    
   ],
   imports: [
     BrowserModule,
@@ -31,9 +40,9 @@ import { AuthInterceptor } from 'src/services/auth.interceptor';
     MatInputModule,
     FormsModule,
     MatCardModule,
-    HttpClientModule
+    HttpClientModule,
   ],
-  providers: [AuthGuard,AuthorizationService, [{provide:HTTP_INTERCEPTORS, useClass:AuthInterceptor, multi:true}] ],
+  providers: [AuthGuard,AuthorizationService,PensionDisbursementService,ProcessPensionService,PensionerDetailService, [{provide:HTTP_INTERCEPTORS, useClass:AuthInterceptor, multi:true}] ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
